@@ -1,0 +1,274 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login positive for reviewers",
+        "description": "",
+        "id": "use-case1;login-positive-for-reviewers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13320227895,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates",
+            "match": {
+              "location": "LoginStepDef.user_navigates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 274499620,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on menu \"Registration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Registration",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepDef.user_clicks(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1309939080,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters in field \"name\" value \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 22
+                },
+                {
+                  "val": "Tester",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212007240,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters in field \"username\" value \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 22
+                },
+                {
+                  "val": "Tester",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238764775,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters in field \"password\" value \"Testerpassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 22
+                },
+                {
+                  "val": "Testerpassword",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268424162,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters in field \"cpassword\" value \"Testerpassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cpassword",
+                  "offset": 22
+                },
+                {
+                  "val": "Testerpassword",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251491334,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters in field \"email\" value \"tester@testing.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 22
+                },
+                {
+                  "val": "tester@testing.com",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214195918,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters in field \"phoneNumber\" value \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phoneNumber",
+                  "offset": 22
+                },
+                {
+                  "val": "1234",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230620211,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters in field \"address\" value \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "address",
+                  "offset": 22
+                },
+                {
+                  "val": "1234",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212064899,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters in field \"aboutMe\" value \"tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aboutMe",
+                  "offset": 22
+                },
+                {
+                  "val": "tester",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236953717,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters in field \"role\" value \"tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "role",
+                  "offset": 22
+                },
+                {
+                  "val": "tester",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginStepDef.userEnters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173857809,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on button \"Register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Register",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepDef.user_clicks_login(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "use case1",
+    "description": "",
+    "id": "use-case1",
+    "keyword": "Feature",
+    "uri": "com/automation/systemtesting/Registration.feature"
+  }
+]

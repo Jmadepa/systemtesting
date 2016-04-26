@@ -1,0 +1,13 @@
+Feature: use case1
+
+@test
+Scenario: Login positive for reviewers
+Given user navigates
+When user clicks on menu "Login"
+When user enters username "jagmadepalle"
+And user enters password "jagmadepalle"
+And user clicks on button "Login"
+Then user not loggedin "Logoff"
+And user closes the broswer
+
+					
