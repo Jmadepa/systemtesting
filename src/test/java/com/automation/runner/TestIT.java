@@ -10,8 +10,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-//@CucumberOptions(plugin = {"pretty", "html:target/cucumber"},glue = { "com.automation", }, features={"src/test/resources"})
-@CucumberOptions(plugin = {"pretty", "html:target/reports/cucumber", "json:target/reports/cucumber-report.json"},glue = { "com.automation", }, features={"src/test/resources/com/automation/customer/PurchaseTicketNegativeScenario.feature"})
+@CucumberOptions(plugin = {"pretty", "html:target/cucumber"},glue = { "com.automation", }, features={"src/test/resources"})
+//@CucumberOptions(plugin = {"pretty", "html:target/reports/cucumber", "json:target/reports/cucumber-report.json"},glue = { "com.automation", }, features={"src/test/resources/com/automation/customer/PurchaseTicketNegativeScenario.feature"})
 public class TestIT
 {
 	Page page = new Page();
