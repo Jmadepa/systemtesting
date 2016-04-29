@@ -21,6 +21,7 @@ And user enters in field "aboutMe" value "tester"
 And user enters in field "role" value "customer"
 And user clicks on button "Add User"
 Then user created successfully
+And user closes the broswer
 
 
 

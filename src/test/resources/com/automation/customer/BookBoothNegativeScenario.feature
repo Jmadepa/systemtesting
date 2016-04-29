@@ -1,7 +1,7 @@
-Feature: Purchase Ticket
+Feature: Verify An Evevent
 
 @test
-Scenario: User purchase a ticket
+Scenario: Create a Booth
 Given user navigates
 When user clicks on menu "Login"
 When user enters username "pooja"
@@ -11,10 +11,9 @@ Then user logged in successfully as "Booths"
 When user clicks on menu "Events"
 Then user is at page "Event Name"
 And user clicks on button "Robot Show"
-And user clicks on button "Purchase Ticket"
-And user enters in field "count" value "2"
-And user clicks on button "Purchase Ticket"
-Then user purchased ticket successfully
-
-					
-
+And user clicks on button "Book Booth"
+And user select size as "small"
+And user enters in field "count" value "5"
+And user clicks on button "Pay Now"
+Then booth is created successfully
+And user closes the broswer

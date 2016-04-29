@@ -85,6 +85,12 @@ public class LoginStepDef extends Definition{
 		Assert.assertTrue("Field value is not equal "+value, login.verifyValues(fields,value));
 
 	}
+	@When("^user select size as \"([^\"]*)\"")
+	public void selectSize(String field){
+		login.selectSize(field);
+		
+	}
+	
 	
 	@Then("^user waits for \"([^\"]*)\" sec$")
 	public void hardwait(String waitTime) throws Throwable {
@@ -125,6 +131,30 @@ public class LoginStepDef extends Definition{
 	@Then("event is not created successfully")
 	public void eventnotcreatedsuccessfully(){
 		Assert.assertFalse("User not created successfully ", login.eventCreatedSuccessfully());
+		
+	}
+	
+	@Then("booth is created successfully")
+	public void boothcreatedsuccessfully(){
+		Assert.assertTrue("booth not created successfully ", login.boothCreatedSuccessfully());
+		
+	}
+	
+	@Then("booth is not created successfully")
+	public void boothnotcreatedsuccessfully(){
+		Assert.assertFalse("booth created successfully ", login.boothCreatedSuccessfully());
+		
+	}
+	
+	@Then("user purchased ticket successfully")
+	public void ticketsuccessfully(){
+		Assert.assertTrue("booth not created successfully ", login.ticketPurchasedSuccessfully());
+		
+	}
+	
+	@Then("user not purchased ticket successfully")
+	public void ticketnotsuccessfully(){
+		Assert.assertFalse("booth created successfully ", login.ticketPurchasedSuccessfully());
 		
 	}
 	 

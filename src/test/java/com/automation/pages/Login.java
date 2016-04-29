@@ -71,6 +71,11 @@ public class Login extends Page{
 		
 	}
 	
+	public void selectSize(String type){
+		driver.findElement(By.id("dropdownMenu1")).click();
+		driver.findElement(By.xpath("//*[text()='"+type+"']")).click();
+		
+	}
 	public void enterVal(String fields,String value){
 		try{
 		driver.findElement(By.id(fields)).clear();
@@ -119,6 +124,26 @@ public class Login extends Page{
 		return false;
 		}catch(Exception e){
 			return true;
+		}
+		
+	}
+	
+	public boolean boothCreatedSuccessfully(){
+		try{
+		driver.findElement(By.xpath("//*[contains(text(),'Book Booth')]"));
+		return true;
+		}catch(Exception e){
+			return false;
+		}
+		
+	}
+	
+	public boolean ticketPurchasedSuccessfully(){
+		try{
+		driver.findElement(By.xpath("//*[contains(text(),'Book Booth')]"));
+		return true;
+		}catch(Exception e){
+			return false;
 		}
 		
 	}

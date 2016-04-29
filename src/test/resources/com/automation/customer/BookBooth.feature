@@ -1,18 +1,19 @@
-Feature: Verify An Evevent
+Feature: Book a booth
 
 @test
-Scenario: Create a Booth
+Scenario: Booth should not be created when value is blank
 Given user navigates
 When user clicks on menu "Login"
-When user enters username "kidmend"
-And user enters password "kidmend"
+When user enters username "pooja"
+And user enters password "pooja"
 And user clicks on button "Login"
-Then user logged in successfully as "Add Events"
+Then user logged in successfully as "Booths"
 When user clicks on menu "Events"
 Then user is at page "Event Name"
 And user clicks on button "Robot Show"
 And user clicks on button "Book Booth"
-And user enters in field "count" value "5"
-And user enters in field "dropdownMenu1" value "small"
+And user select size as "small"
+And user enters in field "count" value ""
 And user clicks on button "Pay Now"
-
+Then booth is not created successfully
+And user closes the broswer
