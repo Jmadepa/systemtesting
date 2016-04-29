@@ -157,6 +157,17 @@ public class LoginStepDef extends Definition{
 		Assert.assertFalse("booth created successfully ", login.ticketPurchasedSuccessfully());
 		
 	}
-	 
+	
+	@Then("user reviewed successfully")
+	public void reviewedsuccessfully(){
+		Assert.assertTrue(" not reviewed successfully ", login.reviewSuccessfully());
+		
+	}
+	
+	@Then("user not reviewed successfully")
+	public void reviewednotsuccessfully(){
+		Assert.assertFalse("reviwed successfully", login.reviewSuccessfully());
+		
+	}
 	
 }

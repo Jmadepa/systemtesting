@@ -148,6 +148,16 @@ public class Login extends Page{
 		
 	}
 	
+	public boolean reviewSuccessfully(){
+		try{
+		driver.findElement(By.xpath("//button[text()='Accept']"));
+		return true;
+		}catch(Exception e){
+			return false;
+		}
+		
+	}
+	
 	
 
 }
