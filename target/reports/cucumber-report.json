@@ -4,15 +4,15 @@
     "elements": [
       {
         "line": 4,
-        "name": "Login positive for reviewers",
+        "name": "Create an Event",
         "description": "",
-        "id": "use-case1;login-positive-for-reviewers",
+        "id": "use-case1;create-an-event",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 13320227895,
+              "duration": 22673929174,
               "status": "passed"
             },
             "line": 5,
@@ -24,15 +24,15 @@
           },
           {
             "result": {
-              "duration": 274499620,
+              "duration": 431400499,
               "status": "passed"
             },
             "line": 6,
-            "name": "user clicks on menu \"Registration\"",
+            "name": "user clicks on menu \"Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Registration",
+                  "val": "Login",
                   "offset": 21
                 }
               ],
@@ -42,11 +42,101 @@
           },
           {
             "result": {
-              "duration": 1309939080,
+              "duration": 916203583,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters in field \"name\" value \"Tester\"",
+            "name": "user enters username \"poojarem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "poojarem",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDef.user_entersusername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 200415901,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password \"poojarem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "poojarem",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDef.user_enterspassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147675919,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on button \"Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepDef.user_clicks_login(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2266008630,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user logged in successfully as \"Add Events\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Events",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStepDef.user_logged_in_successfully(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5717782588,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on button \"Add Events\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Events",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepDef.user_clicks_login(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2939867385,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters in field \"name\" value \"Test Event\"",
             "match": {
               "arguments": [
                 {
@@ -54,7 +144,7 @@
                   "offset": 22
                 },
                 {
-                  "val": "Tester",
+                  "val": "Test Event",
                   "offset": 35
                 }
               ],
@@ -64,19 +154,19 @@
           },
           {
             "result": {
-              "duration": 212007240,
+              "duration": 506869450,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user enters in field \"username\" value \"Tester\"",
+            "line": 13,
+            "name": "user enters in field \"location\" value \"Test Location\"",
             "match": {
               "arguments": [
                 {
-                  "val": "username",
+                  "val": "location",
                   "offset": 22
                 },
                 {
-                  "val": "Tester",
+                  "val": "Test Location",
                   "offset": 39
                 }
               ],
@@ -86,19 +176,19 @@
           },
           {
             "result": {
-              "duration": 238764775,
+              "duration": 349607967,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enters in field \"password\" value \"Testerpassword\"",
+            "line": 14,
+            "name": "user enters in field \"category\" value \"IT\"",
             "match": {
               "arguments": [
                 {
-                  "val": "password",
+                  "val": "category",
                   "offset": 22
                 },
                 {
-                  "val": "Testerpassword",
+                  "val": "IT",
                   "offset": 39
                 }
               ],
@@ -108,63 +198,73 @@
           },
           {
             "result": {
-              "duration": 268424162,
+              "duration": 1334715888,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user enters in field \"cpassword\" value \"Testerpassword\"",
+            "line": 15,
+            "name": "user enters date as today date for \"startDate\"",
             "match": {
               "arguments": [
                 {
-                  "val": "cpassword",
-                  "offset": 22
-                },
-                {
-                  "val": "Testerpassword",
-                  "offset": 40
-                }
-              ],
-              "location": "LoginStepDef.userEnters(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 251491334,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters in field \"email\" value \"tester@testing.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "email",
-                  "offset": 22
-                },
-                {
-                  "val": "tester@testing.com",
+                  "val": "startDate",
                   "offset": 36
                 }
               ],
-              "location": "LoginStepDef.userEnters(String,String)"
+              "location": "LoginStepDef.enterToday(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 214195918,
+              "duration": 3390336454,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user enters in field \"phoneNumber\" value \"1234\"",
+            "line": 16,
+            "name": "user enters date as today date for \"endDate\"",
             "match": {
               "arguments": [
                 {
-                  "val": "phoneNumber",
+                  "val": "endDate",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDef.enterToday(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2563741972,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters date as today date for \"time\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "time",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDef.enterToday(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 959674652,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters in field \"ticketPrice\" value \"50\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ticketPrice",
                   "offset": 22
                 },
                 {
-                  "val": "1234",
+                  "val": "50",
                   "offset": 42
                 }
               ],
@@ -174,20 +274,20 @@
           },
           {
             "result": {
-              "duration": 230620211,
+              "duration": 1046231610,
               "status": "passed"
             },
-            "line": 13,
-            "name": "user enters in field \"address\" value \"1234\"",
+            "line": 19,
+            "name": "user enters in field \"description\" value \"Test Description\"",
             "match": {
               "arguments": [
                 {
-                  "val": "address",
+                  "val": "description",
                   "offset": 22
                 },
                 {
-                  "val": "1234",
-                  "offset": 38
+                  "val": "Test Description",
+                  "offset": 42
                 }
               ],
               "location": "LoginStepDef.userEnters(String,String)"
@@ -196,59 +296,15 @@
           },
           {
             "result": {
-              "duration": 212064899,
+              "duration": 6172311888,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user enters in field \"aboutMe\" value \"tester\"",
+            "line": 20,
+            "name": "user clicks on button \"create\"",
             "match": {
               "arguments": [
                 {
-                  "val": "aboutMe",
-                  "offset": 22
-                },
-                {
-                  "val": "tester",
-                  "offset": 38
-                }
-              ],
-              "location": "LoginStepDef.userEnters(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 236953717,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enters in field \"role\" value \"tester\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "role",
-                  "offset": 22
-                },
-                {
-                  "val": "tester",
-                  "offset": 35
-                }
-              ],
-              "location": "LoginStepDef.userEnters(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 173857809,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user clicks on button \"Register\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Register",
+                  "val": "create",
                   "offset": 23
                 }
               ],
@@ -269,6 +325,6 @@
     "description": "",
     "id": "use-case1",
     "keyword": "Feature",
-    "uri": "com/automation/systemtesting/Registration.feature"
+    "uri": "src/test/resources/com/automation/events/CreateEvent.feature"
   }
 ]

@@ -1,12 +1,13 @@
-Feature: use case1
+Feature: Login
 
 @test
-Scenario: Login positive for reviewers
+Scenario: user should not logged in when wrong password applied
 Given user navigates
 When user clicks on menu "Login"
 When user enters username "poojarem"
-And user enters password "poojarem"
+And user enters password ""
 And user clicks on button "Login"
-Then user logged in successfully as "Add"
+Then user not loggedin "Logoff"
 And user closes the broswer
-					
+
+

@@ -1,10 +1,12 @@
 package com.automation.stepdefinitions;
 
+
 import junit.framework.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+@SuppressWarnings("deprecation")
 public class LoginStepDef extends Definition{
 
 	@Given("^user navigates$")
@@ -53,7 +55,7 @@ public class LoginStepDef extends Definition{
 	public void usernotloggedin(String userttype) throws Throwable {
 
 
-		Assert.assertTrue("user looged in as", login.loggedInSuccessfully(userttype));
+		Assert.assertFalse("user looged in as", login.loggedInSuccessfully(userttype));
 
 	}
 	
@@ -62,5 +64,69 @@ public class LoginStepDef extends Definition{
 		login.enterVal(field, values);
 		
 	}
+	@When("^user enters date as today date for \"([^\"]*)\"$")
+	public void enterToday(String field){
+		login.enterDate(field);
+		
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Then("^user is at page \"([^\"]*)\"$")
+	public void user_isAtPage(String userttype) throws Throwable {
+
+      Thread.sleep(2000);
+		Assert.assertTrue("user is not at page "+userttype, login.loggedInSuccessfully(userttype));
+
+	}
+	@Then("^value of field \"([^\"]*)\" equals to \"([^\"]*)\"$")
+	public void verifyTheValueInField(String fields, String value) throws Throwable {
+
+      Thread.sleep(2000);
+		Assert.assertTrue("Field value is not equal "+value, login.verifyValues(fields,value));
+
+	}
+	
+	@Then("^user waits for \"([^\"]*)\" sec$")
+	public void hardwait(String waitTime) throws Throwable {
+
+      Thread.sleep(Integer.parseInt(waitTime)*30);
+		
+
+	}
+	
+	@Then("user created successfully")
+	public void usercreatedsuccessfully(){
+		Assert.assertTrue("User not created successfully ", login.userCreatedSuccessfully());
+		
+	}
+	
+	@Then("user not created successfully")
+	public void usernotcreatedsuccessfully(){
+		Assert.assertFalse("User created successfully ", login.userCreatedSuccessfully());
+		
+	}
+	
+	@Then("location is added successfully")
+	public void location(){
+		Assert.assertTrue("location not added successfully ", login.locationCreatedSuccessfully());
+	}
+	
+	@Then("location is not added successfully")
+	public void locationNotAdded(){
+		Assert.assertTrue("location added successfully ", login.locationCreatedSuccessfully());
+	}
+	
+	@Then("event is created successfully")
+	public void eventcreatedsuccessfully(){
+		Assert.assertTrue("User not created successfully ", login.eventCreatedSuccessfully());
+		
+	}
+	
+	@Then("event is not created successfully")
+	public void eventnotcreatedsuccessfully(){
+		Assert.assertFalse("User not created successfully ", login.eventCreatedSuccessfully());
+		
+	}
+	 
 	
 }
